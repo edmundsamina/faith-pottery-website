@@ -1,5 +1,5 @@
 import "./headerFooter.css";
-import cart from '../../../../public/icons/search-cart.png'
+import cart from '../../icons/search-cart.png'
 
 export function Header() {
   return (
@@ -14,8 +14,10 @@ export function Header() {
           <li>Blog</li>
           <li>Contact</li>
         </ul>
+        <div className="search-container">
 
-          <form className="search-container">
+       
+          <form className="search">
             <input
               className="nosubmit"
               type="search"
@@ -23,6 +25,7 @@ export function Header() {
             />
           </form>
           <img className = "basket" src={cart} alt= "basket" />
+          </div>
       </div>
     </div>
   );

@@ -1,0 +1,24 @@
+.button{
+    align-items: center;
+    background-color: var(--button);
+    border: none;
+    color: var(--buttonText);
+    cursor: pointer;
+    font-family: var(--textFont);
+    font-size: 1rem;
+    font-weight: 100;
+    height: 5%;
+    justify-content: center;
+    line-height: 24px;
+    min-width:  18%;
+    outline: 0;
+    letter-spacing: 0.5px;
+    padding: 0 17px;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+
+
+
