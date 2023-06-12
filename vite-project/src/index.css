@@ -67,10 +67,11 @@ p, h1, h2, h3, h4, h5, h6 {
 
 :root{
   --background: #F9F4EF;
-  --buttonText: #FFFFFF;
+  --buttonText: #FFFFFE;
   --headLine: #020826;
   --paragraph: #716040;
   --button: #8C7851;
+  --lightBackground: #EADDCF;
   --titleFont: 'Playfair';
   --textFont: 'Lato'
 

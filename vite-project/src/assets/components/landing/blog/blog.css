@@ -1,0 +1,23 @@
+.landing-blog-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 140vh;
+    background-color: var(--buttonText);
+}
+
+.blog-nav-container{
+    display: flex;
+    justify-content: space-between;
+    height: 70%;
+    width: 65%;
+}
+
+.blog-nav{
+
+}
+
+.blog-nav-img{
+    height: 75%;
+}

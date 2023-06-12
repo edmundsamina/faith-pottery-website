@@ -6,6 +6,7 @@ import img5 from "../../images/landing/footer-banner05.png";
 import footerImg from '../../images/landing/how-image-grid06.png'
 import { footerNavLinks } from "../../Data/nav-data";
 import { FooterNav } from "./FooterNav";
+import { Button } from "../buttons/Button";
 
 const instaImages = [img1, img2, img3, img4, img5];
 
@@ -16,8 +17,9 @@ export function Footer() {
     <h4>Stay in the know</h4>
     <h5>Sign up to the weekly newsletter to get up-to-date news about new collections, promotions and events.</h5>
     <div className="signup-container">
-    <input/>
-    <button>SIGN ME UP</button>
+    <input placeholder="Email Address" className="sign-up-input"/>
+    <Button text="SIGN ME UP" onClick={()=>{}} className="sign-up-button"/>
+   
 
     </div>
 

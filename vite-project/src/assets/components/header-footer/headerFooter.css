@@ -72,9 +72,50 @@ input.nosubmit {
 
 .newsletter-container {
   height: 75vh;
+  font-family: var(--textFont);
+
+  color: var(--buttonText);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-around;
+  padding: 60px;
   background-color: var(--button);
 }
 
+.newsletter-container > h4 {
+  font-size: 3.5rem;
+  font-family: var(--titleFont);
+  font-weight: 100;
+}
+
+.newsletter-container > h5{
+  padding-bottom: 50px;
+  font-size: 1.5rem;
+  font-weight: 100;
+  width: 48%;
+  text-align: center;
+}
+
+.signup-container{
+  width: 60%;
+  height: 15%;
+}
+
+.sign-up-input{
+  width: 70%;
+  padding: 10px;
+  background-color: var(--lightBackground);
+  border:none;
+  height: 100%;
+}
+
+.sign-up-button{
+background-color: var(--paragraph);
+height: 100%;
+width: 30%;
+
+}
 .footer-nav {
   display: flex;
   height: 65vh;
