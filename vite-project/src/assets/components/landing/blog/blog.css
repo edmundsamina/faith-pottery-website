@@ -1,7 +1,7 @@
 .landing-blog-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     height: 140vh;
     background-color: var(--buttonText);
@@ -11,10 +11,39 @@
     display: flex;
     justify-content: space-between;
     height: 70%;
-    width: 65%;
+    width: 70%;
+}
+
+.landing-blog-container > h4, .blog-nav > span {
+color: var(--paragraph);
+font-family: var(--textFont);
+font-weight: 100;
+
 }
 
 .blog-nav{
+    height: 100%;
+    width: 45%;
+}
+.landing-blog-container > h4{
+    font-size: 2rem;
+}
+
+.landing-blog-container > h5 {
+    font-size: 4rem;
+    font-weight: 200;
+    font-family: var(--titleFont);
+}
+
+.blog-nav > h6{
+    padding-top: 30px;
+    padding-bottom: 15px;
+    font-size: 2rem;
+    font-family: var(--titleFont);
+    font-weight: 100;
+}
+.blog-nav > span {
+    font-size: 1.5rem;
 
 }
 

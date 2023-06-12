@@ -1,0 +1,74 @@
+.how-container{
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.how-text-container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 50%;
+    gap: 30px;
+
+}
+
+.how-text-container > h4{
+text-align: center;
+font-family: var(--titleFont);
+font-weight: 100;
+font-size: 3.5rem;
+}
+
+.how-text-container > p{
+font-family: var(--textFont);
+color: var(--paragraph);
+font-size: 1.8rem;
+font-weight: 100;
+text-align: center;
+}
+.image-grid{
+    width: 65%;
+    height: 50%;
+    display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+  gap: 15px; 
+  grid-template-areas: 
+    "A A A B B C C C"
+    "A A A B B C C C"
+    "A A A B B F F F"
+    "D D E E E F F F"
+    "D D E E E F F F"; 
+}
+
+.gridTopA{
+    grid-area: A;
+}
+.gridTopB{
+    grid-area: B;
+}
+
+.gridTopC{
+    grid-area: C;
+}
+
+.gridBottomA{
+    grid-area: D;
+}
+
+.gridBottomB{
+    grid-area: E;
+}
+
+.gridBottomC{
+    grid-area: F;
+}  
+.image-img{
+    height: 100%;
+    width: 100%;
+    background-color: pink;
+}
