@@ -1,4 +1,37 @@
 .new-carousel-container{
-    height: 90vh;
+    height: 100vh;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
     background-color: white;
+}
+
+.carousel-grid{
+    display: grid;
+    height: 80%;
+    width:80%;
+    gap: 30px;
+    grid-template-columns: auto auto auto;
+}
+
+.title-section, .carousel-arrows{
+    display: flex;
+    font-family: var(--textFont);
+
+}
+
+.title-section{
+    width: 80%;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.carousel-arrows{
+    justify-content: space-between;
+
+    width: 10%;
 }

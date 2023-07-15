@@ -1,0 +1,9 @@
+.product-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: var(--textFont);
+    color: var(--button);
+    font-size: 1rem;
+}
+

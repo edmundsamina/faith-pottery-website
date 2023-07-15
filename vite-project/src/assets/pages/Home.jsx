@@ -9,9 +9,8 @@ export function Home() {
     <div className="home-container">
       <Landing />
       <NewCarousel />
-      <AboutUs/>
+      <AboutUs />
       <How />
-
       <LandingBlog />
     </div>
   );
