@@ -1,5 +1,7 @@
 import "./headerFooter.css";
-import cart from '../../icons/search-cart.png'
+import cart from '../../icons/search-cart.png';
+import { MenuOverlay } from "./MenuOverlay";
+import { shopOverlay, bestsellersOverlay } from "../../Data/nav-data";
 
 export function Header() {
   return (
@@ -8,15 +10,13 @@ export function Header() {
       <div className="nav">
         <ul className="nav-list">
           <li>New In</li>
-          <li>Shop</li>
+          <li className="nav-list-shop">Shop</li>
           <li>Bestsellers</li>
           <li>About</li>
           <li>Blog</li>
           <li>Contact</li>
         </ul>
         <div className="search-container">
-
-       
           <form className="search">
             <input
               className="nosubmit"
@@ -27,6 +27,7 @@ export function Header() {
           <img className = "basket" src={cart} alt= "basket" />
           </div>
       </div>
+      <MenuOverlay listItemArray={shopOverlay}/>
     </div>
   );
 }

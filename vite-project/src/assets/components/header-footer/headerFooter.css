@@ -65,6 +65,16 @@ input.nosubmit {
   height: 18px;
 }
 
+/* HEADER OVERLAY CSS  */
+
+.overlay-container{
+  display: none;
+}
+
+.nav-list-shop :hover + .overlay-container{
+  display: block;
+}
+
 /* FOOTER CSS  */
 .footer-container {
   height: 200vh;
@@ -73,7 +83,6 @@ input.nosubmit {
 .newsletter-container {
   height: 75vh;
   font-family: var(--textFont);
-
   color: var(--buttonText);
   display: flex;
   flex-direction: column;
@@ -135,7 +144,6 @@ width: 30%;
   gap: 20px;
   height: 100%;
   padding: 50px;
-
   width: 18%;
 }
 .footer-nav-container > h5 {
@@ -168,6 +176,7 @@ width: 30%;
   font-weight: 400;
   font-family: var(--titleFont);
 }
+
 .footer-nav-img {
   height: 75%;
 }

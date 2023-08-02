@@ -39,3 +39,25 @@ export const footerNavLinks = [
         ]
     }, 
 ]
+
+export const shopOverlay = [
+    "Shop all", 
+    "Vases", 
+    "Cups", 
+    "Flatware",
+    "Napkin rings", 
+    "Bowls", 
+    "Teapots", 
+    "Candle holders"
+]
+
+export const bestsellersOverlay = [
+    "All bestsellers", 
+    "Vases", 
+    "Cups", 
+    "Flatware",
+    "Napkin rings", 
+    "Bowls", 
+    "Teapots", 
+    "Candle holders"
+]
