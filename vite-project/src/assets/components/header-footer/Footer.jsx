@@ -49,6 +49,29 @@ export function Footer() {
           })}
         </div>
       </div>
+      <footer>
+        <div className="bottom-page-footer">
+       
+        <p>
+        2022 Faith Pottery
+        </p>
+ <p>
+          All Rights Reserved
+        </p>
+        </div>
+
+          <ul className="bottom-page-nav">
+            <li>
+              Privacy
+            </li>
+            <li>
+              Terms of Use
+            </li>
+            <li>
+              Site Credits
+            </li>
+          </ul>
+      </footer>
     </div>
   );
 }

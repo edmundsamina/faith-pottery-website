@@ -1,14 +1,36 @@
 import "./new-carousel.css";
 import { ProductCard } from "../../product-card/ProductCard";
 import { mockData } from "../../../Data/product-mock-data";
+import { useState} from 'react';
 
 export function NewCarousel() {
+const [scrollPosition, setScrollPosition] = useState(0);
+
+//functions below update the useState with a value that then gets passed to the carousel grid and 
+//tells it what percentage to move the carousel left or right making use of inline css styling
+  const handleLeftClick = () => {
+    if(scrollPosition !== 0){
+      setScrollPosition(scrollPosition + 25);
+    }
+  };
+  
+  const handleRightClick = () => {  
+    console.log(scrollPosition)
+  if(scrollPosition !== (mockData.length*-25)){
+    setScrollPosition(scrollPosition - 25);
+
+  }
+  };
+
+
   return (
     <section className="new-carousel-container">
+     <div className="slider">
       <div className="title-section">
         <p>NEW THIS WEEK</p>
         <span className="carousel-arrows">
           <svg
+          onClick={handleLeftClick}
             width="48"
             height="30"
             viewBox="0 0 58 24"
@@ -21,6 +43,7 @@ export function NewCarousel() {
             />
           </svg>
           <svg
+          onClick={handleRightClick}
             width="48"
             height="30"
             viewBox="0 0 58 24"
@@ -34,23 +57,20 @@ export function NewCarousel() {
           </svg>
         </span>
       </div>
-      <div className="carousel-grid">
-        <ProductCard
-          img={mockData[0].img}
-          title={mockData[0].title}
-          price={mockData[0].price}
+     
+      <div className="carousel-grid" style={{transform: `translateX(${scrollPosition}%)`}}>
+        { mockData.map((product) =>{
+          return <ProductCard
+          key={Math.random()*232}
+          img={product.img}
+          title={product.title}
+          price={product.price}
         />
-        <ProductCard
-          img={mockData[0].img}
-          title={mockData[0].title}
-          price={mockData[0].price}
-        />
-        <ProductCard
-          img={mockData[0].img}
-          title={mockData[0].title}
-          price={mockData[0].price}
-        />
-      </div>
+        })
+        }
+        
+         </div>
+         </div>
     </section>
   );
 }

@@ -3,12 +3,13 @@
   position: fixed;
   background-color: var(--background);
   width: 100%;
-  height: 30vh;
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
   gap: 20px;
+  z-index: 1;
 }
 
 .nav,
@@ -28,6 +29,28 @@
 
 .nav {
   width: 75%;
+  cursor: pointer;
+}
+
+.overlay-container{
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+
+}
+
+.overlay-nav{
+width: 75%;
+list-style: none;
+padding: 20px;
+font-size: 1.3rem;
+font-family: var(--textFont);
+display: flex;
+flex-direction: column;
+gap: 10px;
+padding-bottom: 40px;
 }
 
 .search-container {
@@ -65,19 +88,10 @@ input.nosubmit {
   height: 18px;
 }
 
-/* HEADER OVERLAY CSS  */
-
-.overlay-container{
-  display: none;
-}
-
-.nav-list-shop :hover + .overlay-container{
-  display: block;
-}
-
-/* FOOTER CSS  */
 .footer-container {
   height: 200vh;
+  position: relative;
+
 }
 
 .newsletter-container {
@@ -201,4 +215,36 @@ width: 30%;
   font-size: 2.5rem;
   font-family: var(--titleFont);
   font-weight: 300;
+}
+
+footer{
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  padding: 15px 30px 15px 30px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--button);
+  font-family: var(--textFont);
+  color: var(--buttonText);
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.bottom-page-footer, .bottom-page-nav{
+  display: flex;
+  gap: 10px;
+
+}
+
+.bottom-page-footer > p:first-child {
+  border-right: solid 2px white;
+  padding-right: 10px;
+
+}
+
+.bottom-page-nav{
+  list-style: none;
+  gap: 15px;
 }

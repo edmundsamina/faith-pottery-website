@@ -1,17 +1,35 @@
 import "./headerFooter.css";
-import cart from '../../icons/search-cart.png';
+import cart from "../../icons/search-cart.png";
 import { MenuOverlay } from "./MenuOverlay";
 import { shopOverlay, bestsellersOverlay } from "../../Data/nav-data";
+import { useState } from "react";
 
 export function Header() {
+  const [showShop, setShowShop] = useState(false);
+  const [showBestsellers, setShowBestsellers] = useState(false);
+
+  //function that conditionally shows menu overlay for shop navigation
+  function dropDownShop() {
+    setShowShop(!showShop);
+    setShowBestsellers(false);
+
+  }
+
+  //function that conditionally shows menu overlay for shop bestsellers
+  function dropDownBestsellers() {
+    setShowBestsellers(!showBestsellers);
+    setShowShop(false);
+
+  }
+
   return (
     <div className="header-container">
       <h1>faith</h1>
       <div className="nav">
         <ul className="nav-list">
           <li>New In</li>
-          <li className="nav-list-shop">Shop</li>
-          <li>Bestsellers</li>
+          <li className="nav-list-shop" onClick={dropDownShop}>Shop</li>
+          <li onClick={dropDownBestsellers}>Bestsellers</li>
           <li>About</li>
           <li>Blog</li>
           <li>Contact</li>
@@ -24,10 +42,11 @@ export function Header() {
               placeholder="Search products"
             />
           </form>
-          <img className = "basket" src={cart} alt= "basket" />
-          </div>
+          <img className="basket" src={cart} alt="basket" />
+        </div>
       </div>
-      <MenuOverlay listItemArray={shopOverlay}/>
+      {showShop && <MenuOverlay listItemArray={shopOverlay} />}{" "}
+      {showBestsellers && <MenuOverlay listItemArray={bestsellersOverlay} />}
     </div>
   );
 }
