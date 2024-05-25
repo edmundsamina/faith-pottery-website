@@ -1,0 +1,38 @@
+.products-page{
+    /* min-height: 100vh; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+
+}
+
+.products-banner-container{
+    padding-top: 30vh;
+   
+}
+
+.products-container{
+    min-height: 100vh;
+}
+.products-container, .products-banner-container{
+    width: 75%;
+}
+.filtering-container, .products-banner-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.products-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+
+.drop-down{
+    border: none;
+}

@@ -3,6 +3,7 @@ import cart from "../../icons/search-cart.png";
 import { MenuOverlay } from "./MenuOverlay";
 import { shopOverlay, bestsellersOverlay } from "../../Data/nav-data";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export function Header() {
   const [showShop, setShowShop] = useState(false);
@@ -24,10 +25,10 @@ export function Header() {
 
   return (
     <div className="header-container">
-      <h1>faith</h1>
+      <a href="/">faith</a>
       <div className="nav">
         <ul className="nav-list">
-          <li>New In</li>
+         <li>New In</li>
           <li className="nav-list-shop" onClick={dropDownShop}>Shop</li>
           <li onClick={dropDownBestsellers}>Bestsellers</li>
           <li>About</li>

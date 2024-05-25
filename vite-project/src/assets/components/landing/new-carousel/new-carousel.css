@@ -27,7 +27,7 @@ justify-content: center;
   gap: 30px;
   z-index: 0;
   scroll-snap-type: x mandatory;
-    transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
 
 }
 

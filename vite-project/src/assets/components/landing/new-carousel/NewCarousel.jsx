@@ -1,6 +1,6 @@
 import "./new-carousel.css";
 import { ProductCard } from "../../product-card/ProductCard";
-import { mockData } from "../../../Data/product-mock-data";
+import { mockData } from "../../../data/product-mock-data";
 import { useState} from 'react';
 
 export function NewCarousel() {
@@ -16,7 +16,7 @@ const [scrollPosition, setScrollPosition] = useState(0);
   
   const handleRightClick = () => {  
     console.log(scrollPosition)
-  if(scrollPosition !== (mockData.length*-25)){
+  if(scrollPosition !== (mockData.length*-25) + 100){
     setScrollPosition(scrollPosition - 25);
 
   }
@@ -67,8 +67,7 @@ const [scrollPosition, setScrollPosition] = useState(0);
           price={product.price}
         />
         })
-        }
-        
+        }       
          </div>
          </div>
     </section>

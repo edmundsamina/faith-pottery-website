@@ -26,9 +26,6 @@ export function How() {
       <img className="image-img gridBottomA" alt="a shelf, a pin board and some pottery art displayed on the wall"src={gridButtomA}/>
       <img className="image-img gridBottomB" alt="lots of small round finished pottery peices, some are beige, some are white and some are black"src={gridButtomB}/>
       <img className="image-img gridBottomC" alt="a close up view of the inside of a peice of clay being shaped, the womans hand is using a shaping knife to shape the inside of the bowl." src={gridButtomC}/>
-
-
-
       </div>
     </div>
   );

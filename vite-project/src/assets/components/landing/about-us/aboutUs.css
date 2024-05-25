@@ -47,6 +47,11 @@ height: 80%;
     height: 50vh;
 }
 
+.about-us-text-banner > .title-button > p {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
  .title-button{
     display: flex;
     flex-direction: column;

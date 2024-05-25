@@ -25,6 +25,12 @@ font-weight: 100;
     height: 100%;
     width: 45%;
 }
+
+.blog-nav > span{
+    display: flex;
+    align-items: cen;
+    gap: 30px;
+}
 .landing-blog-container > h4{
     font-size: 2rem;
 }
@@ -43,7 +49,8 @@ font-weight: 100;
     font-weight: 100;
 }
 .blog-nav > span {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
 
 }
 
